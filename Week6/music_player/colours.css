@@ -1,0 +1,10 @@
+:root{
+  --colour-navbar: blue;
+  --colour-song-details: red;
+  --colour-controls: green;
+  --colour-progress-played: magenta;
+  --colour-progress-left: cyan;
+  --colour-text: rebeccapurple;
+  --colour-icons: silver;
+  --colour-circle: yellow;
+}

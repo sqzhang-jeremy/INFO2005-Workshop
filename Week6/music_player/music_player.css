@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap");
+@import "colours.css";
+
+/* RESET */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  color: var(--colour-text);
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+svg {
+  display: block;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  font-family: "Open Sans", sans-serif;
+}
+
+.player {
+  background-color: var(--colour-song-details);
+  width: 350px;
+  height: 630px;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--colour-navbar);
+}
+.icon {
+  fill: var(--colour-icons);
+  width: 48px;
+  height: 48px;
+}
+
+.details {
+  background-color: var(--colour-song-details);
+  height: 350px;
+  display: grid;
+  place-items: center;
+}
+
+.song_details {
+  width: 250px;
+  text-align: center;
+  line-height: 2.5em;
+}
+
+h1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
+
+h2 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+}
+
+.progress_bar {
+  display: flex;
+  height: 1em;
+}
+
+.progress_bar__played {
+  flex: 30%;
+  background-color: var(--colour-progress-played);
+}
+
+.progress_bar__left {
+  flex: 1;
+  background-color: var(--colour-progress-left);
+}
+
+.time {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--colour-controls);
+}
+
+h4 {
+  margin: 0.2em;
+  color: var(--colour-text);
+  font-weight: 300;
+  font-size: 0.9em;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--colour-controls);
+  flex-grow: 1;
+}
+
+.circle {
+  border-radius: 100%;
+  background-color: var(--colour-circle);
+  height: 80px;
+  width: 80px;
+  display: grid;
+  place-items: center;
+}

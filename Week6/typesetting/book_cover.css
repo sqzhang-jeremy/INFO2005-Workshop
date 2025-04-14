@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Gabriela&family=Josefin+Sans&family=Playfair+Display:ital,wght@1,400;1,500&display=swap");
+html {
+  width: 100%;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  background-image: url(https://info20005.github.io/Type-and-Colour/cat.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+
+.aiw-cover {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+  width:50%;
+  height:100%;
+  justify-content:center;
+}
+
+.aiw-cover__title {
+  font-family: "Gabriela", serif;
+  font-size:4.22vw;
+}
+
+.aiw-cover__author {
+  font-family: "Playfair Display", serif;
+  font-size: 2.61vw;
+}
+
+.aiw-cover__button {
+  color: black;
+  border-radius: 4px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  padding: 1vw;
+  display: inline-block;
+  margin-top: 5vh;
+  text-transform: uppercase;
+  font-family: 'Josefin Sans', sans-serif;
+  padding: 2vw;
+  text-decoration: none;
+}
+
+
