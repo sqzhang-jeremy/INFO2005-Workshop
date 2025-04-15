@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>a word-guessing game</title>
+    <link rel="stylesheet" href="button.css">
+</head>
+<body>
+    <div id="chooseDifficulty">
+        <h1>Show/Hide Elements</h1>
+        <div class="tests">
+            <button onclick="showElement()">Show Button</button>
+            <button id="bottonToHide" onclick="hideElement()">Hide Button</button>
+        </div>
+        <h1>Random Word Generator</h1>
+        <div class="tests">
+            <button onclick="GetRandomWord()">Random Word</button>
+            <p > Random Generated word:</p>
+            <p id="randomWordLable"> </p>
+        </div>
+        <h1>Difficulty</h1>
+            <div class="tests">
+                <button onclick="startEasy()">Easy</button>
+                <button onclick="startNormal()">Normal</button>
+                <button onclick="startHard()">Hard</button>          
+                <p> Lives:</p>
+                <p id="livesLabel"> 0 </p>
+            </div>
+        <h1>Text Input</h1>
+            <div class="tests">
+                <button onclick="submitGuess()">Submit Guess</button>
+                <input type="inputText" id="guessInput">
+                <p id="inputCharLable"> Input character</p>
+            </div>
+            <div class="tests">
+                <p> Correct Guess:</p>
+                <p id="correctGuessLabel"> </p>
+            </div>
+            <div class="tests">
+                <p> Wrong Guess:</p>
+                <p id="wrongGuessLabel"> </p>
+            </div>
+        <h1>Restart</h1>
+            <div class="tests">
+                <button onclick="restart()">Restart</button>
+            </div>
+    </div>
+</body>
+</html>
