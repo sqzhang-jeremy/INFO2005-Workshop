@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav id="topnav" class="responsive">
+        <!-- (li>a)*5 -->
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+            <li class="dropdown-trigger"><a href="#">Learn more <i class="fa fa-caret-down"></i></a>
+                <ul class="dropdown-content">
+                    <li><a href="#">Reviews</a></li>
+                    <li><a href="#">Scholarly articles</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                </ul>
+            </li>
+            <a href="javascript:void(0);" style="font-size:15px;" class="hamburger"
+                onclick="toggleResponsive()">&#9776;</a>
+        </ul>
+    </nav>
+    <main>
+        <h2>Responsive Navigation bar with Dropdown</h2>
+        <p>Hover over the Learn more button to open the dropdown menu.</p>
+        <p>Resize the browser window to see the hamburger menu.</p>
+        <p>Click on the hamburger icon to expand the navigation bar</p>
+    </main>
+
+    <script src="navbar.js"></script>
+</body>
+
+</html>

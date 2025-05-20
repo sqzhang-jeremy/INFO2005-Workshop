@@ -1,0 +1,30 @@
+:root{
+   --white:  #f2f2f2;
+   --green: rgb(144, 172, 88);
+   --grey: #333;
+}
+
+nav{
+    background-color: var(--grey);
+}
+
+nav a{
+    color: var(--white);
+}
+
+nav li:hover{
+    background-color: var(--green);
+}
+
+.dropdown-content{
+    background-color: var(--white);
+    box-shadow:  0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a{
+    color: var(--grey);
+}
+
+.hamburger:hover{
+    background-color: var(--green);
+}

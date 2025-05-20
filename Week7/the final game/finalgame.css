@@ -1,0 +1,16 @@
+body {
+    background-color: #bddbe5;
+    background-size: 100%;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    text-align: center;
+    flex-direction: column;
+}
+
+#startButton, #mainGame, #RRguess, #youLose, #youWin {
+    display: none;
+}
+

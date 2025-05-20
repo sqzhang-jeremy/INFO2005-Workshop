@@ -1,0 +1,60 @@
+/* Box model fix */
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+
+nav{
+    position: relative;
+    margin: 10px;
+}
+
+nav li{
+    padding: 12px 16px;
+}
+
+.hamburger{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 12px;
+}
+
+.dropdown-trigger{
+    position: relative;
+}
+
+.dropdown-content{
+    position: absolute;
+    top:100%;
+    left: 0;
+    transform: scale(0);
+}
+
+
+/*         Learn more          list         */
+.dropdown-trigger:hover .dropdown-content{
+    transform: scale(1);
+}
+
+/* nav   list of options */
+.responsive > ul > li:not(:first-child){
+    display:none;
+}
+
+/* Rules for desktop version */
+@media screen and (min-width: 600px) {
+
+    /* Items side by side */
+    nav > ul{
+        display:flex;
+        flex-direction: row;
+    }
+
+    /* Hide the hamburger */
+    .hamburger{
+        display:none;
+    }
+}

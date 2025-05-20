@@ -12,7 +12,7 @@ function GetRandomWord() {
   var randomWords = ["humor", "miniature", "amusing", "creepy", "fact", "risk", "verse", "land", "lumpy", "perfect"]
 
   /* Write code here to generate a random number and asign to wordToGuess the corresponding word */
-  var arrayLength = randomWords.length;
+  var arrayLength = randomWohttps://github.com/sqzhang-jeremy/INFO2005-Workshoprds.length;
   wordToGuess = randomWords[Math.floor(Math.random() * arrayLength)];
   document.getElementById("randomWordLable").innerHTML = wordToGuess;
 }
@@ -47,7 +47,8 @@ function submitGuess() {
     var guessChar = document.getElementById("guessInput").value;
     document.getElementById("guessInput").value = "";
     document.getElementById("inputCharLable").innerHTML = guessChar;
-    checkGuess(guessChar);}
+    checkGuess(guessChar);
+}
 
 var correctGuess = [];
 var wrongGuess = [];

@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Gabriela&family=Josefin+Sans&family=Playfair+Display:ital,wght@1,400;1,500&display=swap");
+
+
+:root{
+    --primary-font:  'Playfair Display', sans-serif;
+    --secondary-font:  "Gabriela", serif;
+}
+
+body{
+    font-family: var(--primary-font);
+}
+
+nav{
+    font-family: var(--secondary-font);
+}
+
+nav a{
+    text-decoration: none;
+    font-size: 17px;
+}
+
+main{
+    text-align: center;
+}
+
+h2 {
+    font-family: var(--secondary-font);
+    font-size: 24px;
+}
